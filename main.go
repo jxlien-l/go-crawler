@@ -18,7 +18,7 @@ func main() {
 	httpClient := http.Client{
 		Transport: &http.Transport{},
 	}
-
+	// Start url
 	url := "https://go.dev/dl/"
 	res, err := httpClient.Get(url)
 	if err != nil {
